@@ -2,6 +2,31 @@
 
 A custom, image-centric theme for [Ghost](http://github.com/tryghost/ghost/). Made for publishers and portfolios with plenty of graphics to show off to the world. Completely free and fully responsive, released under the MIT license.
 
+# Getting Started
+
+To develop on the theme we recommend that you use Visual Studio Code with the Remote development tools
+* Install [VS Code](https://code.visualstudio.com/)
+* Install [Remote Developement Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+* Clone this Repository (if not done already)
+* Open it
+* Hit `Ctrl/Command + Shift + P`, type Reopen
+* `Reopen Folder in container` should appear, Select and Press enter
+* Wait for the container to be build and start
+
+If it's your first time, start ghost using yarn gulp ghost
+* Open a browser on `https://localhost:3001` configure your blog and your account.
+* In the admin UI head to `Integrations`
+* Click on `Add Custom Integration` at the bottom of the page
+* Choose a name, for example `Theme upload`
+* Copy the admin API key
+* at the root of the repo create a `.token` file and paste the api key inside the file. Save it.
+* hit  `Ctrl/Command + C` to terminate the ghost command
+
+To start developping:
+* In the VS Code terminal 
+* run `yarn gulp` 
+
+
 **Demo: https://london.ghost.io**
 
 &nbsp;
