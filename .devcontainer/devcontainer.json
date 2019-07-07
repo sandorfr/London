@@ -1,0 +1,7 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+{
+    "dockerFile": "Dockerfile",
+    "extensions": [],
+    "appPort": ["3001:2368"],
+    "postCreateCommand": "ln -s /workspaces/London/.data /var/lib/ghost/content/data && yarn install --production=false"
+}
